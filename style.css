@@ -1,0 +1,151 @@
+/*-------------------------------------------
+    Intégration Police d'écritures
+--------------------------------------------*/
+@font-face {
+  font-family: Impossible;
+  src: url('../fonts/Impossible-0/IMPOS0__.ttf'); 
+}
+@font-face {
+  font-family: Melissa;
+  src: url('../fonts/bubbble-gum/BubbbleGum.otf'); 
+}
+/*-------------------------------------------
+    Intégration Police d'écritures
+--------------------------------------------*/
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+	margin: 0;
+  }
+ 
+  .mobile-container {
+    max-width: auto;
+	margin: auto;
+    background-color: white;
+    height: 700px;
+    color: white;
+    background: rgb(255,255,255);
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, #1D1925 51%, #211926 84%, #1E1926 100%);
+  }
+
+  .footer-container {
+    max-width: auto;
+	margin: auto;
+    background-color: white;
+    height: 350px;
+    color: white;
+    background: rgb(30,25,38);
+background: linear-gradient(0deg, rgba(30,25,38,1) 0%, rgba(30,25,38,1) 19%, rgba(91,91,107,1) 41%, rgba(255,255,255,1) 100%);
+  }
+ 
+  .contact-container {
+    max-width: 800px;
+    margin: auto;
+    background-color: #e6e6e6;
+    height: 350px;
+    color: black;
+    border-radius: 15px;
+  }
+ 
+  .tarif-container {
+    max-width: auto;
+    margin: auto;
+    background-color: #4e4eff;
+    height: 750px;
+    color: white;
+  }
+ 
+  .topnav {
+    overflow: hidden;
+    background-color:#1E1926;
+ 
+    position: relative;
+  }
+ 
+  .topnav #myLinks {
+    display: none;
+  }
+ 
+  .topnav a {
+    color: white;
+    padding: 40px 60px;
+    text-decoration: none;
+ 
+    font-size: 17px;
+    display: block;
+  }
+ 
+  .topnav a.icon {
+    background: transparent;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+ 
+  .topnav a:hover {
+    background-color: transparent;
+    color: black;
+  }
+ 
+  .active {
+    /*background-color: #4CAF50;*/
+    color: white;
+  }
+ 
+  input {
+    border:0px solid transparent;
+    padding: 8px 9px;
+    width:60%;
+    background-color:#d2d0d0;
+    border-radius:8px;
+    margin-top:30px;
+  }
+ 
+  textarea {
+    border:0px solid transparent;
+    padding: 8px 9px;
+    width:60%;
+    background-color:#d2d0d0;
+    border-radius:8px;
+    margin-top:30px;
+  }
+ 
+  .grid-container {
+  display: grid;
+  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-rows: 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "box-1 box-2 box-3"
+    ". . ."
+    ". . .";
+}
+.box-1 { grid-area: box-1; }
+.box-2 { grid-area: box-2; }
+.box-3 { grid-area: box-3; }
+ 
+.grid-container2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    "BoxPhoto ContainBox ContainBox ContainBox"
+    ". . . ."
+    ". . . .";
+}
+.BoxPhoto { grid-area: BoxPhoto; }
+.ContainBox { grid-area: ContainBox; }
+
+.monA{
+	text-decoration: none;
+	color:white; 
+	margin: 0 5px;
+}
+.monA:hover{
+	text-decoration: underline;
+	text-decoration-color:rgb(0, 47, 255); 
+	margin: 0 5px;
+}
